@@ -11,11 +11,9 @@ categories = ["game-engines", "rendering"]
 
 [dependencies]
 #bevy = { version = "0.4", default-features = false, features = ["render"] }
-bevy = { git = "https://github.com/bevyengine/bevy", branch = "master", default-features = false, features = ["render"] }
-
-[features]
-ex = [ "bevy/bevy_wgpu", "bevy/bevy_winit", "bevy/bevy_gltf", "bevy/x11" ]
+#bevy = { git = "https://github.com/bevyengine/bevy", branch = "master", default-features = false, features = ["render"] }
+bevy = { git = "https://github.com/bevyengine/bevy", rev = "af6723156782b5579c90b4eac1fa49b1646dbaf5" } # commit on 2021-01-28
 
 [[example]]
 name = "mouse_picking"
-required-features = [ "ex" ]
+
